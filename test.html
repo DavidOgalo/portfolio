@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form with reCAPTCHA</title>
+    <!-- Add the reCAPTCHA script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        /* Add your CSS styles here for responsive design */
+        /* Example CSS for responsive form */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="6Le3EiUoAAAAAKufZ8c3s8nkCmg5BCt_3MSQM4X7">
+            
+            <div class="form-group">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+            </div>
+            
+            <div class="form-group">
+                <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
+            </div>
+            
+            <!-- Google reCAPTCHA -->
+            <div class="form-group">
+                <div class="g-recaptcha" data-sitekey="6Le3EiUoAAAAAPULHd6CYcS5XoPtib98uY-Tui2x"></div>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+        </form>
+
+        <!-- Response message container -->
+        <div id="response-message"></div>
+    </div>
+
+    <script>
+        // Handle form submission
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Verify the reCAPTCHA
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6Le3EiUoAAAAAPULHd6CYcS5XoPtib98uY-Tui2x', { action: 'submit' }).then(function (token) {
+                    // Add the reCAPTCHA token to the form data
+                    document.getElementById("contact-form").insertAdjacentHTML("beforeend", `<input type="hidden" name="recaptcha" value="${token}">`);
+
+                    // Submit the form via AJAX or fetch
+                    fetch("https://api.web3forms.com/submit", {
+                        method: "POST",
+                        body: new FormData(document.getElementById("contact-form"))
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        // Handle the response message here
+                        const responseMessage = document.getElementById("response-message");
+                        if (data.success) {
+                            responseMessage.innerHTML = `<div class="alert alert-success">Message sent successfully!</div>`;
+                            document.getElementById("contact-form").reset();
+                        } else {
+                            responseMessage.innerHTML = `<div class="alert alert-danger">Error: ${data.message}</div>`;
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);
+                        const responseMessage = document.getElementById("response-message");
+                        responseMessage.innerHTML = `<div class="alert alert-danger">An error occurred while sending the message.</div>`;
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

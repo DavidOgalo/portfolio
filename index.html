@@ -484,7 +484,10 @@
                     
                     <!-- Contact Form -->
             <form action="https://api.web3forms.com/submit" id="contact-form" method="POST">
-                        <input type="hidden" name="access_key" value="20370526-2116-4c70-8d8a-63ad0979f7bf">
+                <!-- Custom URL -->
+                <input type="hidden" name="redirect" value="https://davidogalo.github.io/portfolio/">
+                <!-- reCAPTCHA -->
+                <input type="hidden" name="access_key" value="6Le3EiUoAAAAAKufZ8c3s8nkCmg5BCt_3MSQM4X7">
                     <div class="row">
                         <div class="col-md-6">
 								<div class="form-group">
@@ -507,15 +510,15 @@
 								</div>
 							</div>
                             <div class="col-md-12">
-                                <div class="h-captcha" data-captcha="true" data-sitekey="6LfuhCEoAAAAAIUWJHJ4yLcy5Kj1shBVGU6cEKtU"></div>
+                                <div class="h-captcha" data-captcha="true" data-sitekey="6Le3EiUoAAAAAPULHd6CYcS5XoPtib98uY-Tui2x"></div>
                             </div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-                                    <!-- <button id="submit-button" type="submit" class="g-recaptcha"
+									<!-- <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5"> -->
+                                    <button id="submit-button" type="submit" class="g-recaptcha"
                                         data-sitekey="6LfuhCEoAAAAAIUWJHJ4yLcy5Kj1shBVGU6cEKtU"
                                         data-callback='onSubmit'
-                                        data-action='submit'>Submit</button> -->
+                                        data-action='submit'>Submit</button>
 								</div>
 							</div>
                     </div>
@@ -607,7 +610,7 @@
           document.getElementById("contact-form").submit();
         }
      </script>
-    <!-- <script>
+    <script>
         function onClick(e) {
           e.preventDefault();
           grecaptcha.enterprise.ready(async () => {
@@ -618,6 +621,6 @@
             // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
           });
         }
-        </script> -->
+        </script>
 </body>
 </html>
