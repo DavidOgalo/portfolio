@@ -558,8 +558,8 @@ input[type='checkbox'] {
 /*     About     */
 /*****************/
 .basic-1 {
-	padding-top: 7.75rem;
-	padding-bottom: 5.25rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 .basic-1 .text-container {
@@ -622,7 +622,7 @@ input[type='checkbox'] {
 /*******************/
 .split .area-1 {
 	height: 430px;
-	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/david-profile.jpg') center center no-repeat;
+	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/freelance-work.png') center center no-repeat;
 	background-size: cover;
 }
 

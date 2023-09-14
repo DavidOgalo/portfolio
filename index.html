@@ -36,6 +36,10 @@
 
     <link rel="icon" href="favicon_io/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css"></link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfuhCEoAAAAAIUWJHJ4yLcy5Kj1shBVGU6cEKtU"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <style>
             a{
             text-decoration: none !important;
@@ -51,7 +55,10 @@
             .li_text{  
             list-style-type: none;  
             color: #c5c8cc !important;
-            }  
+            } 
+            .accordion-item{
+                margin-bottom: 0.85rem;
+            } 
     </style>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
@@ -88,14 +95,14 @@
                         <a class="nav-link page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <span class="nav-item social-icons">
+                <!-- <span class="nav-item social-icons">
                     <span class="fa-stack">
                         <a href="https://www.linkedin.com/in/david-ogalo-082b25232/" target="_blank">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-linkedin fa-stack-1x"></i>
                         </a>
                     </span>
-                </span>
+                </span> -->
             </div> <!-- end of navbar-collapse -->
         </div> <!-- end of container -->
     </nav> <!-- end of navbar -->
@@ -108,7 +115,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h1 class="h1" style="color:white;">Optimizing businesses with effective software solutions</h1>
+                        <h1>Hi there I'm David, </h1><h2 class="h2" style="color:white;">I optimize businesses with innovative software solutions</h2>
                         <a class="btn-solid-lg page-scroll" href="#about">Discover</a>
                         <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contact Me</a>
                     </div> <!-- end of text-container -->
@@ -118,41 +125,75 @@
     </header> <!-- end of header -->
     <!-- end of header -->
 
-
     <!-- About-->
     <div id="about" class="basic-1 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-container first">
-                        <h2>Hi there I'm David, </h2>
-                        <p>a freelance Full-Stack Software Developer who is passionate about building innovative solutions for businesses and individuals. With over 3 years of experience in the industry, I have honed my skills in various programming languages and technologies, making me a versatile and adaptable developer.</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container second">
-                        <div class="time">2019 - PRESENT</div>
-                        <h6>Full-Stack Software Developer</h6>
-                        <p>Freelance software developer proficient in designing, creating and implementing software solutions specific to the needs of respective clients.</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container third">
-                        <div class="time">2022 - 2022</div>
-                        <h6>IT Technician Intern</h6>
-                        <p>Worked as an IT Technician intern for ILRI (International Livestock Research Institute).</p>
-                        <div class="time">2021 - 2021</div>
-                        <h6>Software Developer Intern</h6>
-                        <p>Worked as a junior software developer at Centric Limited IT consultancy company.</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4"> 
-                        <span><a class="btn-solid-reg page-scroll" href="#contact">Contact Me</a></span>      
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of about -->
+            <!-- Cards -->
+            <div class="ex-cards-1 pt-3 pb-3" style="padding-bottom: 0rem;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-10 offset-xl-1" style="margin-bottom:1rem;">
+                            <h2 class="mb-3">Why work with me</h2>
+                            <p>As a result-oriented Software Developer, I pride in delivering efficient and quality solutions. The following help me maintain that standard;</p>
+                        </div>
+                        <div class="col-lg-12">  
+                            <!-- Card -->
+                            <div class="card">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <span class="fa-stack">
+                                            <span class="fas fa-circle fa-stack-2x"></span>
+                                            <span class="fa-stack-1x">1</span>
+                                        </span>
+                                        <div class="media-body">
+                                            <h5>Industry Experience</h5>
+                                            <p>With a deep understanding of diverse industries, I leverage my industry-specific knowledge to deliver software solutions that align perfectly with your objectives.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div> <!-- end of card -->
+                            <!-- end of card -->
+
+                            <!-- Card -->
+                            <div class="card">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <span class="fa-stack">
+                                            <span class="fas fa-circle fa-stack-2x"></span>
+                                            <span class="fa-stack-1x">2</span>
+                                        </span>
+                                        <div class="media-body">
+                                            <h5>Client-Focused Approach</h5>
+                                            <p>My unwavering commitment to client satisfaction means that I'm dedicated to meeting and exceeding your expectations. Your success is my priority.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div> <!-- end of card -->
+                            <!-- end of card -->
+
+                            <!-- Card -->
+                            <div class="card">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <span class="fa-stack">
+                                            <span class="fas fa-circle fa-stack-2x"></span>
+                                            <span class="fa-stack-1x">3</span>
+                                        </span>
+                                        <div class="media-body">
+                                            <h5>Expertise in Diverse Technologies</h5>
+                                            <p>I bring a versatile skill set encompassing a multitude of programming languages, frameworks, and tools. This adaptability allows me to excel in any development environment.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div> <!-- end of card -->
+                            <!-- end of card -->
+
+                        </div> <!-- end of col -->   
+                    </div> <!-- end of row -->   
+                </div> <!-- end of container -->   
+            </div> <!-- end of ex-cards-1 -->
+            <!-- end of cards -->
+        </div>
+        <!-- end of about -->
 
 
     <!-- Services -->
@@ -160,75 +201,69 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">Offered services</h2>
-                    <p class="p-heading">I specialize in the development of a range of solutions including e-commerce platforms, custom CRM systems, mobile apps and more.</p>
+                    <h2 class="h2-heading">Offered Services</h2>
+                    <p class="p-heading">I've developed a diverse range of solutions over a number of years and during that time I've specilaized in delivering the following services.</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->  
             <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="text-box">
-                         <i class="fa-solid fa-pen-to-square fa-3x"></i>
-                        <h4>UI/UX Design</h4>
-                        <p>I love creating visually appealing and user-friendly interfaces for digital products, including websites, apps, and software, to enhance the user experience.</p>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
+                <div class="col-md-6 col-lg-3" style="display: flex;">
+                    <div class="text-box">                  
+                         <i class="fa-solid fa-laptop-code fa-3x" style="margin-bottom: 10px;"></i>
+                        <h5>Web Application Development</h5>
+                        <p>I build custom web apps with HTML, CSS, JavaScript, and backend frameworks (e.g., Node.js, Ruby on Rails) for unique business needs.</p>
                     </div> <!-- end of text-box -->
                 </div> <!-- end of col -->
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" style="display: flex;">
                     <div class="text-box">
-                        <i class="fa fa-cubes fa-3x"></i>
-                        <h4>Web Design</h4>
-                        <p>I specialize in custom web designs to enhance your brand's online presence, a user-focused design that prioritizes usability and accessibility and responsive web design for seamless access on all devices and modern web design with the latest technologies and design trends.</p>
+                        <i class="fa-solid fa-mobile-screen-button fa-3x" style="margin-bottom: 10px;"></i> 
+                        <h5>Mobile Application Development</h5>
+                        <p>I craft iOS and Android apps using Swift, Objective-C, Java, Kotlin, or cross-platform frameworks like React Native and Flutter.</p>
                     </div> <!-- end of text-box -->
                 </div> <!-- end of col -->
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" style="display: flex;">
                     <div class="text-box">
-                        <i class="fa-solid fa-laptop-code fa-3x"></i>
-                        <h4>Web Development</h4>
-                        <p>I offer Full-stack web development with expertise in front-end, back-end, and database technologies specializing in custom web development, CMS development and E-commerce web development.</p>                    
-                    <br>
-                    <br>
+                        <i class="fa-solid fa-cart-shopping fa-3x" style="margin-bottom: 10px;"></i>
+                        <h5>E-commerce Solutions</h5>
+                        <p>I design online stores with integrated payment gateways, inventory management, and robust security features, empowering your e-commerce ventures.</p>                    
                     </div> <!-- end of text-box -->
                 </div> <!-- end of col -->
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" style="display: flex;">
                     <div class="text-box">
-                        <i class="fa-solid fa-mobile-screen-button fa-3x"></i>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-                        <h4>App Development</h4>
-                        <p>I offer custom app development with features and functionalities that meet your unique business requirements including app integration with third-party APIs and cross-platform development for iOS and Android with native performance.</p>
+                        <i class="fa fa-cubes fa-3x" style="margin-bottom: 10px;"></i>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                        <h5>Custom Software Solutions</h5>
+                        <p>I specialize in tailoring software to your specific requirements, whether it's project management tools or CRM systems, to optimize your business processes.</p>
                     </div> <!-- end of text-box -->
                 </div> <!-- end of col -->
-                <div class="col-md-6 col-lg-3"> 
+                <div class="col-md-6 col-lg-3" style="display: flex;">
                     <div class="text-box">
-                        <i class="fa-solid fa-magnifying-glass fa-3x"></i>
-                        <h4>SEO</h4>
-                        <p>I offer effective Search Engine Optimization to increase website traffic, visibility, search engine rankings, website speed, mobile-friendliness and user experience.</p>
-                        <br>
+                        <i class="fa-solid fa-arrow-right-arrow-left fa-3x" style="margin-bottom: 10px;"></i>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                        <h5>API Development and Integration</h5>
+                        <p>I create APIs to connect and exchange data between software systems, adhering to RESTful and GraphQL standards to enhance system interoperability.</p>
                     </div> <!-- end of text-box -->
                 </div> <!-- end of col -->
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" style="display: flex;"> 
                     <div class="text-box">
-                        <i class="fa-solid fa-image fa-3x"></i>
-                        <h4>Graphic Design</h4>
-                        <p>I offer eye-catching and creative graphic design for branding, social media and digital marketing campaigns as well as promotional materials.</p>
-                    </div> <!-- end of text-box -->
-                </div> <!-- end of col -->
-                <div class="col-md-6 col-lg-3">
+                        <i class="fa-solid fa-clipboard-check fa-3x" style="margin-bottom: 10px;"></i>
+                        <h5>Quality Assurance and Testing</h5>
+                        <p>I guarantee software reliability through comprehensive testing, including unit, integration, and user acceptance tests, ensuring the highest project quality.</p>
+                    </div> 
+                </div> 
+                <div class="col-md-6 col-lg-3" style="display: flex;">
                     <div class="text-box">
-                        <i class="fa-solid fa-bezier-curve fa-3x"></i>
-                        <h4>Logo Design</h4>
-                        <p>I offer custom logo design tailored to your brand's unique personality and values while focusing on versatility and scalability across various media and platforms.</p>
-                    </div> <!-- end of text-box -->
-                </div> <!-- end of col -->
-                <div class="col-md-6 col-lg-3">
+                        <!-- <i class="fa-solid fa-bezier-curve fa-3x"></i> -->
+                        <i class="fa-solid fa-database fa-3x" style="margin-bottom: 10px;"></i>  
+                        <h5>Database Design and Management</h5>
+                        <p>I excel in optimizing and managing SQL and NoSQL databases (e.g., MySQL, PostgreSQL, MongoDB) for software development.</p>
+                    </div> 
+                </div> 
+                <div class="col-md-6 col-lg-3" style="display: flex;">
                     <div class="text-box">
-                        <i class="fab fa-adversal fa-3x"></i>
-                        <h4>Branding</h4>
-                        <p>I offer comprehensive branding services, including brand identity, and brand strategy that communicate your unique value proposition and sets you apart from competitors.</p>
-                    </div> <!-- end of text-box -->
-                </div> <!-- end of col -->
+                        <i class="fa-solid fa-gear fa-3x" style="margin-bottom: 10px;"></i>
+                        <h5>DevOps and Deployment</h5>
+                        <p>I streamline CI/CD pipelines, set up cloud infrastructure (AWS, Azure, Google Cloud), and ensure smooth, scalable deployments for your projects.</p>
+                    </div> 
+                </div> 
+
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-2 -->
@@ -245,24 +280,61 @@
                         
                         <!-- Text Container -->
                         <div class="text-container">
-                            <h2>Why Work With Me</h2>
-                            <p>With a strong work ethic and a dedication to delivering high-quality results, I understand the importance of listening to my clients' needs and goals, and work closely with them to ensure that their vision is brought to life.</p>
-                            <h5>DESIGN TOOLS</h5>
-                            <p>My favorite design tools are Photoshop and Illustrator but I can create designs in Figma, Sketch and Adobe XD too.</p>
-                            <h5>DEVELOPMENT SKILLS</h5>
-                            <p>I am familiar and work on a daily basis with Python, HTML, CSS, JavaScript, Django, Bootstrap and other modern frameworks.</p>
+                            <h2>Process I follow</h2>  
                             
-                            <div class="icons-container">
-                                <img src="images/python.png" alt="alternative">
-                                <img src="images/django.png" alt="alternative">
-                                <img src="images/details-icon-javascript.png" alt="alternative">
-                                <img src="images/details-icon-photoshop.png" alt="alternative">
-                                <img src="images/details-icon-illustrator.png" alt="alternative">
-                                <img src="images/details-icon-html.png" alt="alternative">
-                                <img src="images/details-icon-css.png" alt="alternative">
-                                
-                               
-                            </div> <!-- end of icons-container -->
+                            <div class="accordion accordion-flush" id="accordionFlushExample" style="margin-top: 2rem;">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                      1. Requirement Analysis
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Gather detailed client requirements and define project scope. Understand client objectives and constraints.</div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                      2. Design and Planning
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Create a high-level design and project plan. Develop system architecture and user interface design.</div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                      3. Development and Testing
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Develop application based on design specifications. Conduct thorough testing, including unit, integration, and system testing.</div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                        4. Deployment and User Acceptance
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body">Deploy the software to production or staging. Engage the client and end-users in user acceptance testing (UAT)</div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFive">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                        5. Maintenance and Support
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body">Offer ongoing maintenance and support. Deliver documentation, training, and project closure.</div>
+                                    </div>
+                                  </div>
+                            </div>
+                            
                         </div> <!-- end of text-container -->
                         <!-- end of text container -->
 
@@ -280,7 +352,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="h2-heading">Delivered projects</h2>
-                    <p class="p-heading">I'm committed to staying up-to-date with the latest industry trends and technologies, ensuring that my clients receive the most innovative and efficient solutions possible.</p>
+                    <p class="p-heading">Listed below are some of the most representative projects I've worked on.</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -303,67 +375,6 @@
 <!-- Works section -->
 
 
-    <!-- Testimonials -->
-    <div class="cards-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">A few words from people that chose to work with me</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12"> 
-                    
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="testimonial-text">“David is a skilled developer which will do everything possible to deliver the project on time and I really appreciate that”</p>
-                            <div class="details">
-                                <img src="images/testimonial.png" alt="alternative">
-                                <div class="text">
-                                    <div class="testimonial-author">Anonymous</div>
-                                    <div class="occupation">Tech Lead - Techsage</div>
-                                </div> <!-- end of text -->
-                            </div> <!-- end of testimonial-details -->
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="testimonial-text">“Loved to work with David he's such an awesome developer with great attention to details. He also has a great eye for design”</p>
-                            <div class="details">
-                                <img src="images/testimonial.png" alt="alternative">
-                                <div class="text">
-                                    <div class="testimonial-author">Anonymous</div>
-                                    <div class="occupation">HR Manager - Techsage</div>
-                                </div> <!-- end of text -->
-                            </div> <!-- end of testimonial-details -->
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="testimonial-text">“So glad we started working with David. We've used many times his design and development skills for our inhouse online projects”</p>
-                            <div class="details">
-                                <img src="images/testimonial.png" alt="alternative">
-                                <div class="text">
-                                    <div class="testimonial-author">Anonymous</div>
-                                    <div class="occupation">CTO - Techsage</div>
-                                </div> <!-- end of text -->
-                            </div> <!-- end of testimonial-details -->
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-1 -->
-    <!-- end of testimonials -->
 
 
     <!-- Section Divider -->
@@ -391,58 +402,61 @@
                     <div class="accordion" id="accordionExample">
                         <div class="card">
                             <div class="card-header" id="headingOne">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="btn btn-link btn-block text-left" style="text-decoration:none;" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     How can I contact you and quickly get a quote for my online project?
                                 </button>
                             </div>
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    The best way to reach me is through the contact form or by dropping me an email at ogalodavid10@gmail.com. For a fast quote make sure your provide many project details.
+                                    The best way to reach me is through the contact form or by dropping me an email at ogalodavid10@gmail.com.
                                 </div>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-header" id="headingTwo">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <button class="btn btn-link btn-block text-left collapsed" style="text-decoration:none;" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     Do you create designs from the ground up or you are using themes?
                                 </button>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    The best way to reach me is through the contact form or by dropping me an email at ogalodavid10@gmail.com. For a fast quote make sure your provide many project details.                                </div>
+                                    The best way to reach me is through the contact form or by dropping me an email at ogalodavid10@gmail.com.
+                                </div>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-header" id="headingThree">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <button class="btn btn-link btn-block text-left collapsed" style="text-decoration:none;" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     Will I receive any included maintenance or warranty after project delivery?
                                 </button>
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    The best way to reach me is through the contact form or by dropping me an email at ogalodavid10@gmail.com. For a fast quote make sure your provide many project details.                                </div>
+                                    The best way to reach me is through the contact form or by dropping me an email at ogalodavid10@gmail.com.
+                                </div>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-header" id="headingFour">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <button class="btn btn-link btn-block text-left collapsed" style="text-decoration:none;" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     If something goes wrong with the project can I have my money back?
                                 </button>
                             </div>
                             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    The best way to reach me is through the contact form or by dropping me an email at ogalodavid10@gmail.com. For a fast quote make sure your provide many project details.                                </div>
+                                    The best way to reach me is through the contact form or by dropping me an email at ogalodavid10@gmail.com.                              </div>
+                                </div>
                             </div>
-                        </div>
                         <div class="card">  
                             <div class="card-header" id="headingFive">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <button class="btn btn-link btn-block text-left collapsed" style="text-decoration:none;" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                     What's your preferred method of payment and do you need an advance?
                                 </button>
                             </div>
                             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    The best way to reach me is through the contact form or by dropping me an email at ogalodavid10@gmail.com. For a fast quote make sure your provide many project details.                                </div>
+                                    The best way to reach me is through the contact form or by dropping me an email at ogalodavid10@gmail.com.
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -469,36 +483,39 @@
                 <div class="col-lg-12">
                     
                     <!-- Contact Form -->
-                <form id="contactForm">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="20370526-2116-4c70-8d8a-63ad0979f7bf">
                     <div class="row">
                         <div class="col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Your Name">
+									<input type="text" name="name" class="form-control" placeholder="Your Name">
 								</div>
-							</div>
+							</div>  
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Your Email">
+									<input type="text" name="email" class="form-control" placeholder="Your Email">
 								</div>
 							</div>
                             <div class="col-md-12">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Subject">
-								</div>
-							</div>
-                            <div class="col-md-12">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Budget">
+									<input type="text" name="subject" class="form-control" placeholder="Subject">
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+									<textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
 								</div>
 							</div>
+                            <div class="col-md-12">
+                                <div class="h-captcha" data-captcha="true" data-sitekey="6LfuhCEoAAAAAIUWJHJ4yLcy5Kj1shBVGU6cEKtU"></div>
+                            </div>
 							<div class="col-md-12">
 								<div class="form-group">
 									<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                                    <!-- <button class="g-recaptcha"
+                                        data-sitekey="KEY_ID"
+                                        data-callback='onSubmit'
+                                        data-action='submit'>Submit</button> -->
 								</div>
 							</div>
                     </div>
@@ -518,7 +535,7 @@
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">Lets talk</h2>
-						<p>Have a project on your mind? Want to request for a service? feel free to contact me or get a free quote through the contact form.</p>
+						<p>Do you have a project idea? Do you need a solution to streamline your business? Want to request for a service? feel free to contact me.</p>
                             <a class="nav-link page-scroll" href="#contact"><div class="btn btn-primary">Request Quote</div></a>                       
 					</div>
 				</div>
@@ -527,10 +544,12 @@
 						<h2 class="ftco-heading-2">Useful Links</h2>
 						<ul class="list-unstyled">
 							<li><a href="index.html"><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
-                            <li><a href="#about" class="page-scroll"><span class="fa fa-chevron-right mr-2"></span>About Me</a></li>							<li><a href="#services"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
+                            <li><a href="#about" class="page-scroll"><span class="fa fa-chevron-right mr-2"></span>About Me</a></li>	
+                            <li><a href="#services"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
 							<li><a href="#projects" class="page-scroll"><span class="fa fa-chevron-right mr-2"></span>Portfolio</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Terms & Conditions</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Privacy Policy</a></li>
+                            <li><a href="#contact" class="page-scroll"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+							<!-- <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Terms & Conditions</a></li>
+                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Privacy Policy</a></li> -->
 						</ul>
 					</div>
 				</div>
@@ -538,14 +557,14 @@
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">Offered Services</h2>
 						<ul class="list-unstyled">
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>UI/UX Design</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Design</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Development</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>App Development</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>SEO</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Graphic Design</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Logo Design</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Digital Marketing</a></li>
+                            <li><a href="#services"><span class="fa fa-chevron-right mr-2"></span>Web Application Development</a></li>
+							<li><a href="#services"><span class="fa fa-chevron-right mr-2"></span>Mobile Application Development</a></li>
+							<li><a href="#services"><span class="fa fa-chevron-right mr-2"></span>E-Commerce Solutions</a></li>
+							<li><a href="#services"><span class="fa fa-chevron-right mr-2"></span>Custom Software Solutions</a></li>
+							<li><a href="#services"><span class="fa fa-chevron-right mr-2"></span>API Development and Integration</a></li>
+							<li><a href="#services"><span class="fa fa-chevron-right mr-2"></span>Quality Assurance and Testing</a></li>
+                            <li><a href="#services"><span class="fa fa-chevron-right mr-2"></span>Database Design and Management</a></li>
+                            <li><a href="#services"><span class="fa fa-chevron-right mr-2"></span>DevOps and Deployment</a></li>
 						</ul>
 					</div>
 				</div>
@@ -581,5 +600,19 @@
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+        function onClick(e) {
+          e.preventDefault();
+          grecaptcha.enterprise.ready(async () => {
+            const token = await grecaptcha.enterprise.execute('6LfuhCEoAAAAAIUWJHJ4yLcy5Kj1shBVGU6cEKtU', {action: 'submit'});
+            // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
+            // reCAPTCHA Enterprise to the end user's browser.
+            // This token must be validated by creating an assessment.
+            // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
+          });
+        }
+        </script>
 </body>
 </html>
