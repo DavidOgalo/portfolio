@@ -1,2 +1,1 @@
-# Portfolio
-Welcome to my portfolio! This web application showcases my work as a software developer, featuring a collection of my projects, the services I offer, and my professional journey. Built with modern web technologies, this site highlights my expertise in frontend and backend development, user experience design, and system optimization. Explore my portfolio to learn more about my skills, view detailed project descriptions, and see how I can help you achieve your technology goals. Thank you for visiting!
+
